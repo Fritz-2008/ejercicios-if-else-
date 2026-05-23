@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+
+public class Impuesto {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese ingreso: ");
+        double ingreso = sc.nextDouble();
+
+        double impuesto;
+
+        if (ingreso <= 1000) {
+            impuesto = ingreso * 0.05;
+        } else if (ingreso <= 5000) {
+            impuesto = ingreso * 0.10;
+        } else {
+            impuesto = ingreso * 0.20;
+        }
+
+        System.out.println("Impuesto: " + impuesto);
+    }
+}
